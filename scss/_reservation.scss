@@ -1,0 +1,25 @@
+.reservation {
+    margin: 0 auto;
+    width: 95%;
+    max-width: 1200px;
+    @include flexCenter(column);
+   
+  iframe {
+    margin: 2rem auto;
+  }
+
+  p {
+    padding: 1.5rem 0;
+  }
+
+  ul {
+    border: 1px dotted $secondary-color;
+    padding: 1rem;
+    margin-top: 1.5rem;
+    
+    li {
+    list-style: none;
+  }
+  }
+  
+}

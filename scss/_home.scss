@@ -1,0 +1,52 @@
+.home {
+  margin: 0 auto;
+  width: 95%;
+  max-width: 1200px;
+  @include flexCenter(column);  
+
+  .jumbotron {
+    text-align: center;
+    background: 
+      linear-gradient(
+        to left,
+        rgba($secondary-color, .5),
+        rgba($secondary-color, .1)
+        );
+    padding: 2rem;
+
+    img {
+      width: 80%;
+      padding: 2rem 0;
+    }
+
+    button {
+      padding: 1.2rem 1.5rem;
+      margin: .3rem .8rem;
+      border: 1px solid $primary-color;
+      border-radius: 20%;
+      font-size: 1.6rem;
+      font-weight: bolder;
+    
+      &:hover {
+        cursor: pointer;
+        background: lighten($secondary-color, 90%);
+        @include transition-ease;
+        transform: scale(1.02);
+      }
+    }   
+  }  
+
+  h3 {
+    margin-top: 2rem;
+  }
+
+  p {
+    padding: 1.5rem 0;
+  }
+
+  &-text {
+    width: 80%;
+    @include flexCenter(column); 
+    text-align: center;
+  }
+}

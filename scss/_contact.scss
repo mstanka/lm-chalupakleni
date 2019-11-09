@@ -1,0 +1,20 @@
+.contact {
+  margin: 0 auto;
+  width: 95%;
+  height: 100vh;
+  max-width: 1200px;
+  @include flexCenter(column);
+
+  h2 {
+    padding: 2rem;
+  }
+
+  .item {
+    padding: 2rem; 
+  
+    .paragraph {
+      padding-top: 1rem;
+    }
+  }
+
+}
