@@ -20,19 +20,16 @@
     }
 
     button {
-      padding: 1.2rem 1.5rem;
+      padding: 1rem 1.5rem;
       margin: .3rem .8rem;
-      border: 1px solid $primary-color;
-      border-radius: 20%;
+      border: 2px solid $primary-color;
       font-size: 1.6rem;
-      font-weight: bolder;
     
       &:hover {
         cursor: pointer;
-        background: lighten($secondary-color, 90%);
+        background: darken($secondary-color, 50%);
         @include transition-ease;
-        transform: scale(1.02);
-      }
+      }  
     }   
   }  
 

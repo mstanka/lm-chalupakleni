@@ -7,14 +7,23 @@
           box-sizing: border-box;
 }
 
+/* 
+$primary-color: #1a1a1a;
+$secondary-color:#319b39;; 
+$light-color: #fff;
+
+$primary-color: #19120f;
+$secondary-color: #e5a38e;
+$light-color: #fff;
+*/
 /*@mixin media-xl {
   @media screen and (min-width: 1400px) {
     @content;
   }
 }*/
 @media screen and (min-width: 768px) {
-  /*.menu-btn {
-    visibility: hidden;    
+  /* .menu-btn {
+    visibility: hidden;   
   }*/
   .nav {
     visibility: visible;
@@ -135,7 +144,7 @@
           justify-content: center;
   height: 100vh;
   overflow: hidden;
-  background: #19120f;
+  background: #292220;
   list-style-type: none;
   padding-right: 1rem;
   -webkit-transform: translateY(-100%);
@@ -162,7 +171,7 @@
 }
 
 .nav .menu-nav__item.active > a {
-  color: #e5a38e;
+  color: #9e0d0d;
 }
 
 .nav .menu-nav__link {
@@ -174,7 +183,7 @@
 }
 
 .nav .menu-nav__link:hover {
-  color: #e5a38e;
+  color: #9e0d0d;
 }
 
 .menu-nav__item:nth-child(1) {
@@ -223,8 +232,8 @@
 
 .home .jumbotron {
   text-align: center;
-  background: -webkit-gradient(linear, right top, left top, from(rgba(229, 163, 142, 0.5)), to(rgba(229, 163, 142, 0.1)));
-  background: linear-gradient(to left, rgba(229, 163, 142, 0.5), rgba(229, 163, 142, 0.1));
+  background: -webkit-gradient(linear, right top, left top, from(rgba(158, 13, 13, 0.5)), to(rgba(158, 13, 13, 0.1)));
+  background: linear-gradient(to left, rgba(158, 13, 13, 0.5), rgba(158, 13, 13, 0.1));
   padding: 2rem;
 }
 
@@ -234,21 +243,17 @@
 }
 
 .home .jumbotron button {
-  padding: 1.2rem 1.5rem;
+  padding: 1rem 1.5rem;
   margin: .3rem .8rem;
-  border: 1px solid #19120f;
-  border-radius: 20%;
+  border: 2px solid #292220;
   font-size: 1.6rem;
-  font-weight: bolder;
 }
 
 .home .jumbotron button:hover {
   cursor: pointer;
-  background: white;
+  background: black;
   -webkit-transition: all .7s ease-in-out;
   transition: all .7s ease-in-out;
-  -webkit-transform: scale(1.02);
-          transform: scale(1.02);
 }
 
 .home h3 {
@@ -337,8 +342,8 @@
 
 .about-text {
   text-align: center;
-  background: -webkit-gradient(linear, right top, left top, from(rgba(229, 163, 142, 0.5)), to(rgba(229, 163, 142, 0.1)));
-  background: linear-gradient(to left, rgba(229, 163, 142, 0.5), rgba(229, 163, 142, 0.1));
+  background: -webkit-gradient(linear, right top, left top, from(rgba(158, 13, 13, 0.5)), to(rgba(158, 13, 13, 0.1)));
+  background: linear-gradient(to left, rgba(158, 13, 13, 0.5), rgba(158, 13, 13, 0.1));
   padding: 2rem;
 }
 
@@ -383,7 +388,7 @@
 }
 
 .reservation ul {
-  border: 1px dotted #e5a38e;
+  border: 1px dotted #9e0d0d;
   padding: 1rem;
   margin-top: 1.5rem;
 }
@@ -425,7 +430,7 @@
 }
 
 body {
-  background: #19120f;
+  background: #292220;
   color: #fff;
   height: 100vh;
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
@@ -443,8 +448,12 @@ a {
   text-decoration: none;
 }
 
+a:focus {
+  outline: thin dotted;
+}
+
 .text-secondary {
-  color: #e5a38e;
+  color: #9e0d0d;
 }
 
 header {

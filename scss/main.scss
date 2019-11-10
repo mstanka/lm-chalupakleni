@@ -29,6 +29,10 @@ a {
   text-decoration: none;
 }
 
+ a:focus {
+  outline: thin dotted; 
+}
+
 .text-secondary {
   color: $secondary-color;
 }
