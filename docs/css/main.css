@@ -15,6 +15,11 @@ $light-color: #fff;
 $primary-color: #19120f;
 $secondary-color: #e5a38e;
 $light-color: #fff;
+
+
+$primary-color: #292220;
+$secondary-color: #9e0d0d;
+$light-color: #fff;
 */
 /*@mixin media-xl {
   @media screen and (min-width: 1400px) {
@@ -42,6 +47,21 @@ $light-color: #fff;
   }
   .nav .menu-nav__link {
     font-size: 1.5rem;
+  }
+  .items {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
   }
 }
 
@@ -144,7 +164,7 @@ $light-color: #fff;
           justify-content: center;
   height: 100vh;
   overflow: hidden;
-  background: #292220;
+  background: #19120f;
   list-style-type: none;
   padding-right: 1rem;
   -webkit-transform: translateY(-100%);
@@ -171,7 +191,7 @@ $light-color: #fff;
 }
 
 .nav .menu-nav__item.active > a {
-  color: #9e0d0d;
+  color: #ec1919;
 }
 
 .nav .menu-nav__link {
@@ -183,7 +203,7 @@ $light-color: #fff;
 }
 
 .nav .menu-nav__link:hover {
-  color: #9e0d0d;
+  color: #ec1919;
 }
 
 .menu-nav__item:nth-child(1) {
@@ -232,8 +252,8 @@ $light-color: #fff;
 
 .home .jumbotron {
   text-align: center;
-  background: -webkit-gradient(linear, right top, left top, from(rgba(158, 13, 13, 0.5)), to(rgba(158, 13, 13, 0.1)));
-  background: linear-gradient(to left, rgba(158, 13, 13, 0.5), rgba(158, 13, 13, 0.1));
+  background: -webkit-gradient(linear, right top, left top, from(rgba(236, 25, 25, 0.5)), to(rgba(236, 25, 25, 0.1)));
+  background: linear-gradient(to left, rgba(236, 25, 25, 0.5), rgba(236, 25, 25, 0.1));
   padding: 2rem;
 }
 
@@ -245,13 +265,13 @@ $light-color: #fff;
 .home .jumbotron button {
   padding: 1rem 1.5rem;
   margin: .3rem .8rem;
-  border: 2px solid #292220;
+  border: 2px solid #19120f;
   font-size: 1.6rem;
 }
 
 .home .jumbotron button:hover {
   cursor: pointer;
-  background: black;
+  background: #060000;
   -webkit-transition: all .7s ease-in-out;
   transition: all .7s ease-in-out;
 }
@@ -342,8 +362,8 @@ $light-color: #fff;
 
 .about-text {
   text-align: center;
-  background: -webkit-gradient(linear, right top, left top, from(rgba(158, 13, 13, 0.5)), to(rgba(158, 13, 13, 0.1)));
-  background: linear-gradient(to left, rgba(158, 13, 13, 0.5), rgba(158, 13, 13, 0.1));
+  background: -webkit-gradient(linear, right top, left top, from(rgba(236, 25, 25, 0.5)), to(rgba(236, 25, 25, 0.1)));
+  background: linear-gradient(to left, rgba(236, 25, 25, 0.5), rgba(236, 25, 25, 0.1));
   padding: 2rem;
 }
 
@@ -388,7 +408,7 @@ $light-color: #fff;
 }
 
 .reservation ul {
-  border: 1px dotted #9e0d0d;
+  border: 1px dotted #ec1919;
   padding: 1rem;
   margin-top: 1.5rem;
 }
@@ -399,7 +419,7 @@ $light-color: #fff;
 
 .contact {
   margin: 0 auto;
-  width: 95%;
+  width: 100%;
   height: 100vh;
   max-width: 1200px;
   display: -webkit-box;
@@ -430,7 +450,7 @@ $light-color: #fff;
 }
 
 body {
-  background: #292220;
+  background: #19120f;
   color: #fff;
   height: 100vh;
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
@@ -453,7 +473,7 @@ a:focus {
 }
 
 .text-secondary {
-  color: #9e0d0d;
+  color: #ec1919;
 }
 
 header {
